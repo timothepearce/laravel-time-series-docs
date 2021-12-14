@@ -36,14 +36,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Quasar',
+        title: `Laravel Quasar`,
         logo: {
           alt: 'Laravel Quasar logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            to: '/docs/quickstart/overview',
+            to: '/docs/quickstart',
             position: 'left',
             label: 'Quickstart',
             activeBasePath: 'docs/quickstart',
@@ -113,12 +113,19 @@ const config = {
             ],
           },
         ],
-        copyright: `Designed and built by Timothé Pearce.`,
+        copyright: `Designed and built by <a href="https://timpearce.com" target="__blank">Timothé Pearce</a>.`,
       },
 
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['php'],
+      },
+
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };

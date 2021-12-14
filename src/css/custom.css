@@ -38,3 +38,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   .header-github-link:hover {
     opacity: .6;
 }
+
+.menu__link--active:not(.menu__link--sublist),
+.menu__list-item-collapsible:hover,
+.menu__link:hover,
+.menu__caret:hover {
+  background: transparent;
+}
+
+.theme-doc-sidebar-item-link-level-1,
+.theme-doc-sidebar-item-category-level-1 {
+  margin-top: 1rem !important;
+}
