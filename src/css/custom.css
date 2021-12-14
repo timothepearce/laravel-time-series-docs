@@ -48,5 +48,11 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .theme-doc-sidebar-item-link-level-1,
 .theme-doc-sidebar-item-category-level-1 {
-  margin-top: 1rem !important;
+  margin-top: 1.25rem !important;
+}
+
+.theme-doc-sidebar-item-link-level-1,
+.menu__list-item-collapsible {
+  font-weight: bold;
+  font-size: 1.1rem;
 }

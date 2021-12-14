@@ -49,7 +49,7 @@ const config = {
             activeBasePath: 'docs/quickstart',
           },
           {
-            to: '/docs/getting-started/installation',
+            to: '/docs/getting-started/introduction',
             position: 'left',
             label: 'Docs',
             activeBasePath: 'docs/getting-started',
