@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Quickstart
@@ -36,7 +36,7 @@ php artisan quasar:projection UserProjection
 
 Now let's add the `Projectable` trait to the model and define the `$projections` attribute by giving him the projection you just created.
 
-```php title="app/Models/User.php" {8,10,11,12}
+```php title="app/Models/User.php" {10,12,13,14}
 ...
 
 use App\Models\Projections\UserProjection;
@@ -44,6 +44,8 @@ use TimothePearce\Quasar\Projectable;
 
 class User extends Authenticatable
 {
+    ...
+
     use Projectable;
 
     protected array $projections = [
@@ -81,7 +83,7 @@ class UserProjection extends Projection implements ProjectionContract
 
 ## Hook the projection to your model
 
-Then we will hook our Projection to our model by defing a `UserCreated` method:
+Then we will hook our Projection to our model by defing a `userCreated` method:
 ```php title="app/Models/Projections/UserProjection.php" {7,8,9,10,11,12}
 ...
 
@@ -89,7 +91,7 @@ class UserProjection extends Projection implements ProjectionContract
 {
     ...
 
-    public function UserCreated(array $content, User $user): array
+    public function userCreated(array $content, User $user): array
     {
         return [
             'user_count' => $content['user_count'] + 1,
@@ -100,6 +102,44 @@ class UserProjection extends Projection implements ProjectionContract
 
 That's it! Now every time a `User` is created, a projection containing the `user_count` value will be created (or updated) as well.
 
+## Seed some data
+
+For the purpose of this example, we will generate fake data with Tinker:
+
+```
+php artisan tinker --execute="User::factory()->count(4)->create()"
+```
+
 ## Query your projection
 
-// @todo
+Thanks to Eloquent, we can easily build a query to get your projected data:
+
+```php
+use App\Models\Projections\UserProjection;
+
+UserProjection::period('1 hour')
+    ->fillBetween(now()->subHours(1), now())
+    ->pluck('content');
+```
+
+This code will output a time series between the two provided dates based on the given period.
+In case data is missing (no user has been created in the last hour), Quasar will fill the period with the default content:
+
+```
+Illuminate\Support\Collection {
+    all: [
+      [
+        "talks_count" => 0,
+        "from" => "2 hours before",
+        "to" => "1 hour before"
+      ],
+      [
+        "talks_count" => 0,
+        "from" => "1 hour before"
+        "to" => "now"
+      ],
+    ],
+}
+```
+
+You just scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solves, read the introduction of the getting started section.

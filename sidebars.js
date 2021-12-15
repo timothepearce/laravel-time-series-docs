@@ -7,6 +7,7 @@ const sidebars = {
       label: 'Getting Started',
       collapsed: false,
       collapsible: false,
+      link: { type: 'doc', id: 'getting-started/introduction' },
       items: [
         'getting-started/introduction',
         'getting-started/installation',

@@ -35,8 +35,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   width: 24px;
   }
 
-  .header-github-link:hover {
-    opacity: .6;
+.header-github-link:hover {
+  opacity: .6;
 }
 
 .menu__link--active:not(.menu__link--sublist),
@@ -55,4 +55,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .menu__list-item-collapsible {
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.theme-doc-sidebar-item-category-level-1 > .menu__link:hover {
+  color: var(--ifm-menu-color) !important;
+}
+
+.menu__link:hover {
+  color: var(--ifm-color-primary) !important;
 }

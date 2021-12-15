@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Designed and built by <a href="https://timpearce.com" target="__blank">Timothé Pearce</a>.`,
+        copyright: `Designed and built by <a href="https://timpearce.me" target="__blank">Timothé Pearce</a>.`,
       },
 
       prism: {
