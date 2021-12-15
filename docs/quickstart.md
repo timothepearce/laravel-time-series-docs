@@ -112,18 +112,19 @@ php artisan tinker --execute="User::factory()->count(4)->create()"
 
 ## Query your projection
 
-Thanks to Eloquent, we can easily build a query to get your projected data:
+Thanks to Eloquent and Quasar, we can fluenlty query your projection and format them to obtain a time series:
 
 ```php
 use App\Models\Projections\UserProjection;
 
 UserProjection::period('1 hour')
-    ->fillBetween(now()->subHours(1), now())
+    ->fillBetween(now()->subHour(), now())
     ->pluck('content');
 ```
 
-This code will output a time series between the two provided dates based on the given period.
-In case data is missing (no user has been created in the last hour), Quasar will fill the period with the default content:
+Based on the provided period and dates, this code will output a `Collection` filled with your projected data.
+
+In case data is missing (no user has been created in the last hour), Quasar will fill the period with the default content of your projection:
 
 ```
 Illuminate\Support\Collection {
@@ -142,4 +143,4 @@ Illuminate\Support\Collection {
 }
 ```
 
-You just scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solves, read the introduction of the getting started section.
+You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solves, read [the introduction of the Getting Started section](/docs/getting-started/introduction).
