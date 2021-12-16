@@ -112,7 +112,7 @@ php artisan tinker --execute="User::factory()->count(4)->create()"
 
 ## Query your projection
 
-Thanks to Eloquent and Quasar, we can fluenlty query your projection and format them to obtain a time series:
+Thanks to Eloquent and Quasar, we can fluenlty query your projection and format it to obtain a time series:
 
 ```php
 use App\Models\Projections\UserProjection;
@@ -126,7 +126,7 @@ Based on the provided period and dates, this code will output a `Collection` fil
 
 In case data is missing (no user has been created in the last hour), Quasar will fill the period with the default content of your projection:
 
-```
+```php
 Illuminate\Support\Collection {
     all: [
       [
