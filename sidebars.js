@@ -7,9 +7,9 @@ const sidebars = {
       label: 'Getting Started',
       collapsed: false,
       collapsible: false,
-      link: { type: 'doc', id: 'getting-started/introduction' },
+      link: { type: 'doc', id: 'getting-started/what-is-quasar' },
       items: [
-        'getting-started/introduction',
+        'getting-started/what-is-quasar',
         'getting-started/installation',
         'getting-started/configuration',
       ],

@@ -22,7 +22,7 @@ composer require timothepearce/quasar
 php artisan migrate
 ```
 
-## Create your first projection
+## Create your projection
 
 Next, we create a `Projection`, an Eloquent model with hidden capabilities we will explore in a minute.
 
