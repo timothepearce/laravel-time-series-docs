@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Quickstart
 
 This tutorial will let you discover what Laravel Quasar can do for you in less than 10 minutes.
@@ -110,7 +106,7 @@ For the purpose of this example, we will generate fake data with Tinker:
 php artisan tinker --execute="User::factory()->count(4)->create()"
 ```
 
-## Query your time-series
+## Query your time series
 
 Thanks to Eloquent and Quasar, we can fluently query your projection and format it to obtain a time series:
 
