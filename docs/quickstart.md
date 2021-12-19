@@ -143,4 +143,4 @@ TimothePearce\Quasar\Collections\ProjectionCollection {
 }
 ```
 
-You only scratched the surface of Laravel Quasar. If you want to know more about the use cases it can solve, read [the introduction of the Getting Started section](/docs/getting-started/introduction).
+You only scratched the surface of Laravel Quasar. If you want to know more about the use cases it can solve, read [the Getting Started section](/docs/getting-started/what-is-quasar).
