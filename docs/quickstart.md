@@ -4,7 +4,7 @@ This tutorial will let you discover what Laravel Quasar can do for you in less t
 
 :::info
 
-For the sake of understanding, the upcoming tutorial will only focus on some core features of Quasar. More advanced use cases are documented in the Getting Started section.
+For the sake of understanding, the upcoming tutorial will focus on the implementation of a trivial Projection. More advanced use cases are documented in the Getting Started section.
 
 :::
 
@@ -136,11 +136,13 @@ TimothePearce\Quasar\Collections\ProjectionCollection {
             "start_date" => "2022-01-01 01:00:00",
             "end_date" => "2022-01-01 01:59:59",
             "content" => [
-                "users_count" => 0,
+                "users_count" => 4,
             ]
         ],
     ],
 }
 ```
 
-You only scratched the surface of Laravel Quasar. If you want to know more about the use cases it can solve, read [the Getting Started section](/docs/getting-started/what-is-quasar).
+This example walks you through the general structure of a Projection, now it's up to you to store the content of your choice!
+
+You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solve, read [the Getting Started section](/docs/getting-started/what-is-quasar).
