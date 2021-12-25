@@ -18,4 +18,4 @@ Your project must be based on [Laravel](https://laravel.com) (version 8 or above
 
 If you want to discover the library quickly, we advise you to follow the [Quickstart section](/docs/quickstart).
 
-If you are already familiar with the library, the Getting Started section will guide you through the use of the tool.
+If you are already familiar with the library, the [Getting Started](/docs/getting-started/what-is-quasar) section will guide you through the use of the tool.
