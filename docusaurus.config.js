@@ -49,7 +49,7 @@ const config = {
             activeBasePath: 'docs/quickstart',
           },
           {
-            to: '/docs/getting-started/introduction',
+            to: '/docs/getting-started/what-is-quasar',
             position: 'left',
             label: 'Docs',
             activeBasePath: 'docs/getting-started',

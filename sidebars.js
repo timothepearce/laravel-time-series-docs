@@ -13,7 +13,7 @@ const sidebars = {
         'getting-started/installation',
         'getting-started/configuration',
         'getting-started/make-a-model-projectable',
-        'getting-started/create-a-projection',
+        'getting-started/implement-a-projection',
         'getting-started/available-periods',
         'getting-started/query-your-projections',
         'getting-started/format-as-time-series',
