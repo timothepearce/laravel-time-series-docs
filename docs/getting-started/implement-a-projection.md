@@ -25,8 +25,6 @@ class MyProjection extends Projection implements ProjectionContract
 {
     /**
      * Lists the available periods.
-     *
-     * @var string[]
      */
     public array $periods = [];
 
@@ -39,7 +37,7 @@ class MyProjection extends Projection implements ProjectionContract
     }
 
     /**
-     * Compute the projection.
+     * Compute the projection each time a bound model is created.
      */
     public function projectableCreated(array $content, Model $model): array
     {
@@ -52,14 +50,15 @@ class MyProjection extends Projection implements ProjectionContract
 
 The `periods` attribute let you define the life period of each projection. Let's walk through this with an example:
 
-```php title="app/Models/Projections/MyProjection.php" {5,6,7}
+```php title="app/Models/Projections/MyProjection.php" {8}
 ...
 
 class MyProjection extends Projection implements ProjectionContract
 {
-    public array $periods = [
-        '1 day'
-    ];
+    /**
+     * Lists the available periods.
+     */
+    public array $periods = ['1 day'];
 
     ...
 }
