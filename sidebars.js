@@ -12,7 +12,7 @@ const sidebars = {
         'getting-started/what-is-quasar',
         'getting-started/installation',
         'getting-started/configuration',
-        'getting-started/the-projectable-trait',
+        'getting-started/make-a-model-projectable',
         'getting-started/create-a-projection',
         'getting-started/available-periods',
         'getting-started/query-your-projections',

@@ -1,3 +1,0 @@
-# The projectable trait
-
-// todo

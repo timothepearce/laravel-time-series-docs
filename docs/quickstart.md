@@ -4,7 +4,7 @@ This tutorial will let you discover what Laravel Quasar can do for you in less t
 
 :::info
 
-For the sake of understanding, the upcoming tutorial will focus on the implementation of a trivial Projection. More advanced use cases are documented in the [Getting Started](/docs/getting-started/what-is-quasar) section.
+For the sake of understanding, the upcoming tutorial will focus on a trivial Projection's implementation. More advanced use cases are documented in the [Getting Started](/docs/getting-started/what-is-quasar) section.
 
 :::
 
