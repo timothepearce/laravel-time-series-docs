@@ -48,13 +48,13 @@ const config = {
             to: '/quickstart',
             position: 'left',
             label: 'Quickstart',
-            activeBasePath: 'docs/quickstart',
+            activeBasePath: 'quickstart',
           },
           {
-            to: '/getting-started/what-is-quasar',
+            to: '/getting-started/installation',
             position: 'left',
             label: 'Docs',
-            activeBasePath: 'docs/getting-started',
+            activeBasePath: 'getting-started',
           },
           {
             href: 'https://github.com/timothepearce/laravel-quasar',

@@ -13,7 +13,7 @@ Laravel Quasar is in pre-release, feel free to star or contribute if you find in
 
 Laravel Quasar aims to provide a simple and understandable interface for developers to create and maintain **data projections** from **Eloquent models** easily.
 
-The name "Quasar" refers to the celestial body of the same name that radiates from the center of galaxies, absorbs an immense amount of matter and distorts the space-time.
+The name "Quasar" refers to the celestial body of the same name that radiates from the center of galaxies, absorbs an immense amount of matter and distorts the space-time. Well, consider it as a metaphor of what it can do 😄!
 
 ## What can it do?
 
@@ -37,4 +37,4 @@ Instead of reinventing the wheel every time you create or query data projections
 
 If you want to discover the library, I advise you to follow the [Quickstart section](/quickstart).
 
-If you are already familiar with the library, the [next](/getting-started/installation) section will guide you through the use of the tool.
+If you are already familiar with the library, the [next](/getting-started/installation) section will guide you through the installation process.
