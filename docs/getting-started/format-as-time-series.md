@@ -1,4 +1,4 @@
-# Format as time series
+# Format as time-series
 
 :::caution
 
