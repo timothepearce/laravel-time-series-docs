@@ -4,7 +4,7 @@ This tutorial will let you discover what Laravel Quasar can do for you in less t
 
 :::info
 
-For the sake of understanding, the upcoming tutorial will focus on a trivial Projection's implementation. More advanced use cases are documented in the [Getting Started](/docs/getting-started/what-is-quasar) section.
+For the sake of understanding, the upcoming tutorial will focus on a trivial Projection's implementation. More advanced use cases will be documented soon.
 
 :::
 
@@ -22,7 +22,7 @@ php artisan migrate
 
 Next, we create a `Projection`, an Eloquent model with hidden capabilities we will explore in a minute.
 
-In this example, we will project the `User` model but fill free to use the model of your choice.
+In this example, we will project the `User` model but fill free to use the model of your choice (or multiples if you need).
 
 ```shell
 php artisan quasar:projection UserProjection
@@ -77,6 +77,12 @@ class UserProjection extends Projection implements ProjectionContract
 }
 ```
 
+:::tip
+
+You can define multiple periods which are documented in the [available periods section](/getting-started/available-periods). 
+
+:::
+
 ## Hook the projection to your model
 
 Then we will hook our Projection to our model by defining a `userCreated` method:
@@ -98,6 +104,8 @@ class UserProjection extends Projection implements ProjectionContract
 
 That's it! Every time a `User` is created, a projection containing the `user_count` value will be created (or updated) as well.
 
+You get it, you can store anything you want in your projection and bind it to any Model events you're interested in! 
+
 ## Seed some data
 
 For the purpose of this example, we will generate fake data with Tinker:
@@ -113,8 +121,11 @@ Thanks to Eloquent and Quasar, we can fluently query your projection and format 
 ```php
 use App\Models\Projections\UserProjection;
 
-UserProjection::period('1 hour')
-    ->toTimeSeries(now()->subHour(), now());
+UserProjection::period('1 hour') // acts as a scope
+    ->toTimeSeries(
+        now()->subHour(), // 2022-01-01 00:04:25
+        now(), // 2022-01-01 01:04:25
+    ); // executes your query and converts it to a custom collection
 ```
 
 Based on the provided period and dates, this code will output a `Collection` filled with your projected data.
@@ -125,6 +136,7 @@ In case data is missing (no user has been created in the last hour), Quasar will
 TimothePearce\Quasar\Collections\ProjectionCollection {
     items: [
         0 => [
+            // the start date is rounded to the floor given the '1 hour' period
             "start_date" => "2022-01-01 00:00:00",
             "end_date" => "2022-01-01 00:59:59",
             "content" => [
@@ -143,6 +155,6 @@ TimothePearce\Quasar\Collections\ProjectionCollection {
 }
 ```
 
-This example walks you through the general structure of a Projection, now it's up to you to store the content of your choice!
+This example walks you through the general structure of a Projection, now it's up to you to store the content of your choice from any model!
 
-You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solve, read [the Getting Started section](/docs/getting-started/what-is-quasar).
+You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solve, read the [What is Quasar? section](/).

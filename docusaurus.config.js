@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Laravel Quasar',
-  tagline: 'Helps you build Eloquent-based data projections with ease.',
+  tagline: 'Build Eloquent projections with ease.',
   url: 'https://laravel-quasar.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -22,9 +22,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/timothepearce/laravel-quasar-docs/',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -43,22 +45,16 @@ const config = {
         },
         items: [
           {
-            to: '/docs/quickstart',
+            to: '/quickstart',
             position: 'left',
             label: 'Quickstart',
             activeBasePath: 'docs/quickstart',
           },
           {
-            to: '/docs/getting-started/what-is-quasar',
+            to: '/getting-started/what-is-quasar',
             position: 'left',
             label: 'Docs',
             activeBasePath: 'docs/getting-started',
-          },
-          {
-            to: '/docs/api/cli',
-            position: 'left',
-            label: 'API',
-            activeBasePath: 'docs/api',
           },
           {
             href: 'https://github.com/timothepearce/laravel-quasar',
@@ -77,8 +73,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'What is Quasar?',
+                to: '/getting-started/what-is-quasar',
+              },
+              {
+                label: 'Quickstart',
+                to: '/quickstart',
               },
             ],
           },
@@ -86,16 +86,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/timothepearce',
               },
             ],
           },
@@ -103,12 +95,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/timothepearce/laravel-quasar',
               },
             ],
           },

@@ -66,8 +66,10 @@ class MyProjection extends Projection implements ProjectionContract
 
 By defining your projection's periods like that, each time a bound model is created/updated or whatever lifecycle event you listened to, a `MyProjection` model with a creation date between now and yesterday at the same time will be queried. If this projection exists it will be updated, if not, it will be created.
 
-You can define as many periods as you like, the available one are listed in the [Available periods](/docs/getting-started/available-periods) section.
+You can define as many periods as you like, the available one are listed in the [Available periods](/getting-started/available-periods) section.
 
 ## Define the default content of your projection
 
 ## Implement the binding logic
+
+## Add a key to your projection
