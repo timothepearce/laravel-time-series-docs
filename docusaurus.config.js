@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Laravel Quasar',
   tagline: 'Build Eloquent projections with ease.',
-  url: 'https://laravel-quasar.com',
+  url: 'https://timothepearce.laravel-quasar.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'TimothePearce',
   projectName: 'laravel-quasar.github.io',
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
