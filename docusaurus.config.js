@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'TimothePearce',
-  projectName: 'laravel-quasar',
+  projectName: 'laravel-quasar.github.io',
 
   presets: [
     [
