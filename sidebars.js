@@ -19,10 +19,6 @@ const sidebars = {
         'getting-started/format-as-time-series',
       ],
     },
-  ],
-
-  apiSidebar: [
-    'api/cli',
   ]
 };
 

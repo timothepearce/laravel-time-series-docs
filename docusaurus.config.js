@@ -10,7 +10,7 @@ const config = {
   tagline: 'Build Eloquent projections with ease.',
   url: 'https://laravel-quasar.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'TimothePearce',
