@@ -6,4 +6,4 @@
 
 :::
 
-At the time, you can through the all process by exploring the [Quickstart section](/quickstart).
+At the time, you can go through the all process by exploring the [Quickstart section](/quickstart).
