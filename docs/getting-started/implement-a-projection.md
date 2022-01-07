@@ -70,6 +70,8 @@ You can define as many periods as you like, the available one are listed in the 
 
 ## Define the default content of your projection
 
+
+
 ## Implement the binding logic
 
 ## Add a key to your projection
