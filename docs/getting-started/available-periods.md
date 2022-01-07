@@ -1,18 +1,17 @@
 # Available periods
 
-A period is usually composed of two parts, a **duration** and a **type**.
+A period is usually composed of two parts, a **duration**, and a **type**; the only exception is the [global period](#the-global-period).
 
-This section will guide through the process of composing your own period.
+This section will guide you through the process of composing your period.
+
+## Examples of valid periods
+
+Here is a list of valid periods: `*`, `1 day`, `2 hours`, `3 months`, `1 year`, `12 hours`, etc.
 
 ## Types of periods
 
-:::info
-
-You can pluralize the period's type in case the duration is greater than one. eg: `12 months`.
-
-:::
-
 Laravel Quasar gives you access to these different types of periods:
+* `*`
 * `second`
 * `minute`
 * `hour`
@@ -21,10 +20,14 @@ Laravel Quasar gives you access to these different types of periods:
 * `month`
 * `year`
 
+You can pluralize the period's type if the duration is greater than `1`.
+
 ## Period duration
 
 A period duration is a simple number: `1`, `2`, `3`, `4`, etc.
 
-## Examples of valid periods
+## The global period
 
-Here is a list of valid periods: `1 day`, `2 hours`, `3 months`, `1 year`, `12 hours`, etc.
+In case you want to build a projection with an unlimited lifetime, add the period `*` to your projection.
+
+A projection with an unlimited lifetime will be unique (regarding the `*` period) and continuously updated by the bound projectable models.
