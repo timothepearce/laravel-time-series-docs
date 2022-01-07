@@ -50,6 +50,12 @@ You can overwrite this behavior by setting the `models_namespace` attributes to 
 
 ## Enable the queue
 
+:::info
+
+Make sure the queues are set up correctly at the [framework level](https://laravel.com/docs/8.x/queues#running-the-queue-worker) before enabling this option.
+
+:::
+
 Quasar can compute your projections in background jobs by setting the `enable_queue` attribute to `true`.
 
 When enabled, each projection will be created/updated in the `TimothePearce\Quasar\Jobs\ComputeProjection` job.

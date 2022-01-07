@@ -17,11 +17,3 @@ Run the following command to create the Quasar tables:
 ```bash
 php artisan migrate
 ```
-
-## Publish the config file
-
-In order to publish the `config.php` file (which is reviewed in the next section), execute:
-
-```bash
-php artisan vendor:publish --tag=quasar-config
-```

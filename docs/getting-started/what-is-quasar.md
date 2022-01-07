@@ -31,7 +31,7 @@ Instead of reinventing the wheel every time you create or query data projections
 
 ## When should I not use it?
 
-🚫 Can you solve your problem with a single SQL query? Well, don't go for it! The Goal of Quasar is to help you with complexes data you want a final view at it quickly!
+🚫 Can you solve your problem with a single SQL query? This might not be your case as you won't benefit from the package. The goal of Quasar is to provide help with complex data, allowing you to query it in a quick and easy way.
 
 ## How to get started?
 

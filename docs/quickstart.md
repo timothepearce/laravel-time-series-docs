@@ -22,7 +22,7 @@ php artisan migrate
 
 Next, we create a `Projection`, an Eloquent model with hidden capabilities we will explore in a minute.
 
-In this example, we will project the `User` model but fill free to use the model of your choice (or multiples if you need).
+In this example, we will project the `User` model but feel free to use any model you prefer.
 
 ```shell
 php artisan quasar:projection UserProjection
@@ -30,7 +30,7 @@ php artisan quasar:projection UserProjection
 
 ## Make your model projectable
 
-Now let's add the `Projectable` trait to the model and define the `$projections` attribute by giving him the projection you just created.
+Now let's add the `Projectable` trait to the model and assign to the `$projections` attribute an array containing the projection classes you just created
 
 ```php title="app/Models/User.php" {10,12,13,14}
 ...
@@ -157,4 +157,4 @@ TimothePearce\Quasar\Collections\ProjectionCollection {
 
 This example walks you through the general structure of a Projection, now it's up to you to store the content of your choice from any model!
 
-You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solve, read the [What is Quasar? section](/).
+You only scratched the surface of Laravel Quasar, if you want to know more about the use cases it can solve, read the [What is Quasar?](/) section.

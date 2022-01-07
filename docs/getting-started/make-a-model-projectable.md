@@ -2,7 +2,7 @@
 
 ## The Projectable trait
 
-When you want to make your model projectable, you must add it the `TimothePearce\Quasar\Projectable` trait:
+When you want to make your model projectable, you must add it the `TimothePearce\Quasar\Projectable` trait to it:
 
 ```php title="app/Models/MyProjectableModel.php" {6,10}
 <?php
