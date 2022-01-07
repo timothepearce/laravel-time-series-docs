@@ -15,7 +15,7 @@ Laravel Quasar aims to provide a simple and understandable interface for develop
 
 The name "Quasar" refers to the celestial body of the same name that radiates from the center of galaxies, absorbs an immense amount of matter and distorts the space-time. Well, consider it as a metaphor of what it can do 😄!
 
-## What can it do?
+## What problem does it solve?
 
 ✨ One of the typical use cases solved by Laravel Quasar is the creation and maintenance of statistical data represented as **time series** (aka your statistic dashboard).
 
@@ -33,8 +33,12 @@ Instead of reinventing the wheel every time you create or query data projections
 
 🚫 Can you solve your problem with a single SQL query? This might not be your case as you won't benefit from the package. The goal of Quasar is to provide help with complex data, allowing you to query it in a quick and easy way.
 
+## What are the alternatives to Quasar?
+
+💎 One of the alternatives to this package is [Laravel Event Sourcing](https://github.com/spatie/laravel-event-sourcing) built by [Spatie](https://spatie.be), but keep in mind that it provides a low-level API to implement projections without time-series, you'll have to build them by yourself.  
+
 ## How to get started?
 
-If you want to discover the library, I advise you to follow the [Quickstart section](/quickstart).
+🆕 If you want to discover the library, I advise you to follow the [Quickstart section](/quickstart).
 
 If you are already familiar with the library, the [next](/getting-started/installation) section will guide you through the installation process.

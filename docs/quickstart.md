@@ -79,7 +79,7 @@ class UserProjection extends Projection implements ProjectionContract
 
 :::tip
 
-You can define multiple periods which are documented in the [available periods section](/getting-started/available-periods). 
+You can define multiple periods which are documented in the [available periods](/getting-started/available-periods) section. 
 
 :::
 

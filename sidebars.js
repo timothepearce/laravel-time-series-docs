@@ -15,6 +15,7 @@ const sidebars = {
         'getting-started/make-a-model-projectable',
         'getting-started/implement-a-projection',
         'getting-started/available-periods',
+        'getting-started/available-events',
         'getting-started/query-your-projections',
         'getting-started/format-as-time-series',
       ],

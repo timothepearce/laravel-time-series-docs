@@ -10,7 +10,7 @@ php artisan make:projection MyProjection
 
 Your newly created Projection will be accessible in the `app/models/projections` folder.
 
-It is defined as following:
+It is defined as follows:
 
 ```php title="app/Models/Projections/MyProjection.php"
 <?php
@@ -24,12 +24,12 @@ use TimothePearce\Quasar\Models\Projection;
 class MyProjection extends Projection implements ProjectionContract
 {
     /**
-     * Lists the available periods.
+     * The projected periods.
      */
     public array $periods = [];
 
     /**
-     * The default projection content.
+     * The projection default content.
      */
     public function defaultContent(): array
     {
@@ -37,7 +37,7 @@ class MyProjection extends Projection implements ProjectionContract
     }
 
     /**
-     * Compute the projection each time a bound model is created.
+     * The "created" hook for projectable models.
      */
     public function projectableCreated(array $content, Model $model): array
     {
@@ -56,7 +56,7 @@ The `periods` attribute let you define the life period of each projection. Let's
 class MyProjection extends Projection implements ProjectionContract
 {
     /**
-     * Lists the available periods.
+     * The projected periods.
      */
     public array $periods = ['1 day'];
 
@@ -70,8 +70,62 @@ You can define as many periods as you like, the available one are listed in the 
 
 ## Define the default content of your projection
 
+The default content is defined through the method of the same name which must return an array.
 
+```php title="app/Models/Projections/MyProjection.php" {10,11,12,13,14,15}
+...
+
+class MyProjection extends Projection implements ProjectionContract
+{
+    ...
+
+    /**
+     * The projection default content.
+     */
+    public function defaultContent(): array
+    {
+        return [
+            'update_count' => 0,
+            'my_projection_metric' => 0,
+        ];
+    }
+
+    ...
+}
+```
+
+Note that you can also return an array with a dynamic structure if necessary.
 
 ## Implement the binding logic
 
+To bind a model to a projection, you must define a method composed of your model name (camel cased) followed by the event name you want to listen to.
+
+```php title="app/Models/Projections/MyProjection.php" {12,13,14,15,16,17}
+...
+
+use App\Models\MyModel;
+
+class MyProjection extends Projection implements ProjectionContract
+{
+    ...
+
+    /**
+     * The MyModel "updated" hook.
+     */
+    public function myModelUpdated(array $content, MyModel $model): array
+    {
+        return [
+            'update_count' => $content['update_count'] + 1,
+        ];
+    }
+
+    ...
+}
+```
+
+Note that you don't need to return an array with the exact same structure as the default content. The result of your hook method will be merged to the actual projection content (or the default one in case it is created).
+
+The [Available events](/getting-started/available-events) section list all the event you can use.
+
 ## Add a key to your projection
+

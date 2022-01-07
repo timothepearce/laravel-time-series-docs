@@ -4,6 +4,8 @@ When a projection is created, Quasar assigns it a `start_date` and an `end_date`
 
 A period is usually composed of two parts, a **number** followed by a **type**; the only exception is regarding the [global period](#the-global-period).
 
+Here is a list of valid periods: `*`, `1 day`, `2 hours`, `3 months`, `1 year`, `12 hours`.
+
 ## Types of periods
 
 Laravel Quasar gives you access to these different types of periods:
@@ -22,10 +24,6 @@ Note that you should pluralize the period's type if the duration is greater than
 In case you want to build a projection with an unlimited lifetime, add the `*` period to your projection.
 
 A projection with a global period will be unique (regarding the `*` period) and continuously updated by the bound projectable models.
-
-## Examples of valid periods
-
-Here is a list of valid periods: `*`, `1 day`, `2 hours`, `3 months`, `1 year`, `12 hours`, etc.
 
 ## How a projection's start date is defined?
 
