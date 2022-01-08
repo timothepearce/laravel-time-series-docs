@@ -25,6 +25,18 @@ In case you want to build a projection with an unlimited lifetime, add the `*` p
 
 A projection with a global period will be unique (regarding the `*` period) and continuously updated by the bound projectable models.
 
+:::info
+
+A projection with a global period doesn't have a `start_date` or `end_date`.
+
+:::
+
+## What happens when you add several periods to a projection?
+
+You can consider that a projection with X periods is actually X separate projections. Separate rows in the `quasar_projectable` table will be created for each period added to a projection.
+
+For example, if you define a projection with three periods, each time a bound model fires an event, three rows will be updated in the database, one for each period.
+
 ## How a projection's start date is defined?
 
 A projection's `start_date` is defined regarding its period and the current date. Each time a new one is created, its `start_date` will equal **the current date rounded to the floor by the period**.

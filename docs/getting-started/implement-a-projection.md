@@ -129,7 +129,7 @@ The [Available events](/getting-started/available-events) section list all the e
 
 ## Add a key to your projection
 
-Sometimes you need to restrict your projection to a unique identifier (e.g: I want a projection scoped **by Team ID**).
+Sometimes you need to restrict your projection to a unique identifier (e.g: You want a projection scoped **by Team ID**).
 
 In that case, Quasar lets you define a `key` method in your projection:
 
@@ -150,6 +150,14 @@ class MyProjection extends Projection implements ProjectionContract
 }
 ```
 
-If you want to know how to query a projection with a key, look at the [Query your projection](/getting-started/query-your-projections) section.
 
-Note that in case you bound multiple models to your projection you must use the `Illuminate\Database\Eloquent\Model` type as first parameter.
+:::caution
+
+In case you bound multiple models to your projection you must use the `Illuminate\Database\Eloquent\Model` type as first parameter of the `key` method.
+
+:::
+
+
+Now, each time a `MyProjection` is created, updated, or queried, a `WHERE key = ?` will be added to the query builder.  
+
+To understand how to query a projection with a key, look at the [Query your projection](/getting-started/query-your-projections) section.
