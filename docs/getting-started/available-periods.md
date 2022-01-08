@@ -39,7 +39,7 @@ For example, if you define a projection with three periods, each time a bound mo
 
 ## How a projection's start date is defined?
 
-A projection's `start_date` is defined regarding its period and the current date. Each time a new one is created, its `start_date` will equal **the current date rounded to the floor by the period**.
+A projection's `start_date` is defined regarding its period and the current date. Each time a new one is created, its `start_date` will equal **the current date rounded to the floor by the given period**.
 
 For example, let's say the current date is `2022-01-07 11:04:25`:
 
