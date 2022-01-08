@@ -54,6 +54,12 @@ class User extends Authenticatable
 
 ## Implement your projection
 
+:::tip
+
+You can define multiple periods which are documented in the [available periods](/getting-started/available-periods) section.
+
+:::
+
 It's now time to implement the logic of your projection.
 
 Start by defining the `$periods` attribute and the `defaultContent` method as following:
@@ -76,12 +82,6 @@ class UserProjection extends Projection implements ProjectionContract
     }
 }
 ```
-
-:::tip
-
-You can define multiple periods which are documented in the [available periods](/getting-started/available-periods) section. 
-
-:::
 
 ## Hook the projection to your model
 
@@ -121,32 +121,33 @@ Thanks to Eloquent and Quasar, we can fluently query your projection and convert
 ```php
 use App\Models\Projections\UserProjection;
 
-UserProjection::period('1 hour') // acts as a scope
+UserProjection::period('1 hour')
     ->toTimeSeries(
-        now()->subHour(), // 2022-01-01 00:04:25
-        now(), // 2022-01-01 01:04:25
-    ); // executes your query and converts it to a custom collection
+        now()->subDay(), // 2022-01-06 12:04:25
+        now(),           // 2022-01-07 12:04:25
+    );
 ```
 
 Based on the provided period and dates, this code will output a `Collection` filled with your projected data.
 
-In case data is missing (no user has been created in the last hour), Quasar will fill the period with the default content of your projection:
+In case data is missing (no user has been created in the last 24 hours), Quasar will fill the missing projections with the default content:
 
 ```php
 TimothePearce\Quasar\Collections\ProjectionCollection {
     items: [
         0 => [
-            // the start date is rounded to the floor given the '1 hour' period
-            "start_date" => "2022-01-01 00:00:00",
-            "end_date" => "2022-01-01 00:59:59",
+            "start_date" => "2022-01-06 12:00:00", // rounded to the floor given the '1 hour' period
+            "end_date" => "2022-01-06 12:59:59",
             "content" => [
                 "users_count" => 0,
             ]
         ],
 
-        1 => [
-            "start_date" => "2022-01-01 01:00:00",
-            "end_date" => "2022-01-01 01:59:59",
+        ...
+
+        22 => [
+            "start_date" => "2022-01-07 12:00:00",
+            "end_date" => "2022-01-07 12:59:59",
             "content" => [
                 "users_count" => 4,
             ]
