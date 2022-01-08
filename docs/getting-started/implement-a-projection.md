@@ -194,4 +194,4 @@ class MyProjection extends Projection implements ProjectionContract
 
 Now, each time a `MyProjection` is queried, created or updated, a `WHERE key = ?` clause will be added to the query.  
 
-To understand how to query a projection with a key, look at the [Query your projection](/getting-started/query-your-projections) section.
+To understand how to query a projection with a key, look at the [Query your projections](/getting-started/query-your-projections) section.
