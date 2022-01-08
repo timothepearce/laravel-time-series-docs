@@ -116,7 +116,7 @@ php artisan tinker --execute="User::factory()->count(4)->create()"
 
 ## Query your time series
 
-Thanks to Eloquent and Quasar, we can fluently query your projection and format it to obtain a time series:
+Thanks to Eloquent and Quasar, we can fluently query your projection and convert it to obtain a time series:
 
 ```php
 use App\Models\Projections\UserProjection;

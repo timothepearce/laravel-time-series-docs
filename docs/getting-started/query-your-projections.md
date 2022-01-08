@@ -14,7 +14,7 @@ To query a projection with a specific name, use your projection class:
 MyProjection::all();
 ```
 
-This query will return all your items in a `TimothePearce\Quasar\Collections\ProjectionCollection` collection, which will help you when you want to generate a [time-series](/getting-started/format-as-time-series).
+This query will return all your items in a `ProjectionCollection` collection, which will help you when you want to generate a [time-series](/getting-started/convert-to-time-series).
 
 ### Using the model relationship
 
@@ -30,7 +30,7 @@ Depending on the projections you wish to query, the given parameter can also be 
 
 ### Using the parent class
 
-As an alternative, you can use the `name` scope method of the `TimothePearce\Quasar\Models\Projection` class:
+As an alternative, you can use the `name` scope method of the `Projection` class:
 
 ```php
 use TimothePearce\Quasar\Models\Projection;
@@ -63,7 +63,7 @@ MyProjection::key($teamId)
 
 :::caution
 
-The `TimothePearce\Quasar\Exceptions\MissingProjectionPeriodException` exception will rise if you use the `between` scope method without specifying a period.
+The `MissingProjectionPeriodException` exception will rise if you use the `between` scope method without specifying a period.
 
 :::
 
