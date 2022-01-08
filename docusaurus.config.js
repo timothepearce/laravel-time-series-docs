@@ -75,8 +75,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'What is Quasar?',
+                label: 'Getting Started',
                 to: '/getting-started/what-is-quasar',
+              },
+              {
+                label: 'Quickstart',
+                to: '/quickstart',
               },
               {
                 label: 'Quickstart',

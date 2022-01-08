@@ -96,7 +96,11 @@ class MyProjection extends Projection implements ProjectionContract
 
 Note that you can also return an array with a dynamic structure if necessary.
 
-## Implement the binding logic
+## Implement the binding
+
+You can implement this logic in the two different ways listed below.
+
+### The model hook method
 
 To bind a model to a projection, you must define a method composed of your model name (camel cased) followed by the event name you want to listen to.
 
@@ -125,9 +129,46 @@ class MyProjection extends Projection implements ProjectionContract
 
 Note that you don't need to return an array with the exact same structure as the default content. The result of your hook method will be merged to the actual projection content (or the default one in case it is created).
 
+### The projectable hook method
+
+You have probably noticed the `projectableCreated` method when you generate a new projection. Event-specific variations can also be used. eg: `projectableUpdated`, `projectableDeleted`, etc.
+
+This method should be helpful if you treat all bound models in the same way, for example, when your projection does not use specific data from each model.
+
+It can also be considered a fallback for models without a specific implementation.
+
+```php title="app/Models/Projections/MyProjection.php" {12,13,14,15,16,17}
+...
+
+use App\Models\MyModel;
+
+class MyProjection extends Projection implements ProjectionContract
+{
+    ...
+
+    /**
+     * The "updated" hook for all bound models.
+     */
+    public function projectableUpdated(array $content, Model $model): array
+    {
+        return [
+            'update_count' => $content['update_count'] + 1,
+        ];
+    }
+
+    ...
+}
+```
+
 The [Available events](/getting-started/available-events) section list all the event you can use.
 
 ## Add a key to your projection
+
+:::caution
+
+In case you bound multiple models to your projection you must use the `Illuminate\Database\Eloquent\Model` type as first parameter of the `key` method.
+
+:::
 
 Sometimes you need to restrict your projection to a unique identifier (e.g: You want a projection scoped **by Team ID**).
 
@@ -151,13 +192,6 @@ class MyProjection extends Projection implements ProjectionContract
 ```
 
 
-:::caution
-
-In case you bound multiple models to your projection you must use the `Illuminate\Database\Eloquent\Model` type as first parameter of the `key` method.
-
-:::
-
-
-Now, each time a `MyProjection` is created, updated, or queried, a `WHERE key = ?` will be added to the query builder.  
+Now, each time a `MyProjection` is queried, created or updated, a `WHERE key = ?` clause will be added to the query.  
 
 To understand how to query a projection with a key, look at the [Query your projection](/getting-started/query-your-projections) section.

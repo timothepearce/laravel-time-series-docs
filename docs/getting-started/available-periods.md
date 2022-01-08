@@ -21,15 +21,15 @@ Note that you should pluralize the period's type if the duration is greater than
 
 ## The global period
 
-In case you want to build a projection with an unlimited lifetime, add the `*` period to your projection.
-
-A projection with a global period will be unique (regarding the `*` period) and continuously updated by the bound projectable models.
-
 :::info
 
 A projection with a global period doesn't have a `start_date` or `end_date`.
 
 :::
+
+In case you want to build a projection with an unlimited lifetime, add the `*` period to your projection.
+
+A projection with a global period will be unique (regarding the `*` period) and continuously updated by the bound projectable models.
 
 ## What happens when you add several periods to a projection?
 
