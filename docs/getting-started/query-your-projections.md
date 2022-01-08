@@ -14,7 +14,7 @@ To query a projection with a specific name, use your projection class:
 MyProjection::all();
 ```
 
-This query will return all your items in a `ProjectionCollection` collection, which will help you when you want to generate a [time-series](/getting-started/convert-to-time-series).
+This query will return an instance of the `ProjectionCollection` collection, which will help you when you generate a [time-series](/getting-started/query-your-projections#converts-your-projections-to-a-time-series).
 
 ### Using the model relationship
 
@@ -59,7 +59,7 @@ MyProjection::key($teamId)
     ->get();
 ```
 
-## Scope between two dates
+## Get the projections between two dates
 
 :::caution
 
@@ -81,3 +81,13 @@ MyProjection::period('1 day')
 The `between` method parameters must be of `Illuminate\Support\Carbon` type.
 
 Each date is rounded to the floor by the given period, which means that you don't have to provide the exact dates you want, Quasar will solve it for you!
+
+Note that this method does not fill the missing projections between the given dates, if you're looking for that feature go to the next paragraph.
+
+## Fill the missing projection between two dates
+
+// @todo
+
+## Converts your projections to a time-series
+
+// @todo

@@ -17,7 +17,6 @@ const sidebars = {
         'getting-started/available-periods',
         'getting-started/available-events',
         'getting-started/query-your-projections',
-        'getting-started/convert-to-time-series',
       ],
     },
   ]
