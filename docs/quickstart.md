@@ -1,12 +1,12 @@
 # Quickstart
 
-This tutorial will let you discover what Laravel Quasar can do for you in less than 10 minutes.
-
 :::info
 
 For the sake of understanding, the upcoming tutorial will focus on a trivial Projection's implementation. More advanced use cases will be documented soon.
 
 :::
+
+This tutorial will let you discover what Laravel Quasar can do for you in less than 10 minutes.
 
 ## Installation
 
