@@ -39,6 +39,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{
+        name: 'Laravel Quasar',
+        content: 'projections, statistics, plot, chart, time-series, aggregates, Laravel'
+      }],
+
       navbar: {
         title: `Laravel Quasar`,
         logo: {
@@ -57,6 +62,10 @@ const config = {
             position: 'left',
             label: 'Docs',
             activeBasePath: 'getting-started',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/timothepearce/laravel-quasar',
