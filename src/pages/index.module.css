@@ -4,8 +4,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 6rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -18,6 +17,13 @@
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.hero__title {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.hero__code {
+  margin-left: -40px;
 }

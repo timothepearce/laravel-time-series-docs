@@ -78,22 +78,18 @@ const config = {
       },
 
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
             items: [
               {
+                label: 'Quickstart',
+                to: '/quickstart',
+              },
+              {
                 label: 'Getting Started',
                 to: '/getting-started/what-is-quasar',
-              },
-              {
-                label: 'Quickstart',
-                to: '/quickstart',
-              },
-              {
-                label: 'Quickstart',
-                to: '/quickstart',
               },
             ],
           },
