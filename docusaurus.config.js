@@ -68,6 +68,12 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://twitter.com/timothepearce',
+            position: 'right',
+            className: 'header-twitter-link',
+            'aria-label': 'Twitter',
+          },
+          {
             href: 'https://github.com/timothepearce/laravel-quasar',
             position: 'right',
             className: 'header-github-link',
@@ -80,37 +86,7 @@ const config = {
       footer: {
         style: 'light',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Quickstart',
-                to: '/quickstart',
-              },
-              {
-                label: 'Getting Started',
-                to: '/getting-started/what-is-quasar',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/timothepearce',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/timothepearce/laravel-quasar',
-              },
-            ],
-          },
+
         ],
         copyright: `Designed and built by <a href="https://timpearce.me" target="__blank">Timothé Pearce</a>.`,
       },

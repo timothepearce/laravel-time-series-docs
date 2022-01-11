@@ -18,12 +18,3 @@
 .buttons {
   display: flex;
 }
-
-.hero__title {
-  font-size: 4rem;
-  margin-bottom: 30px;
-}
-
-.hero__code {
-  margin-left: -40px;
-}

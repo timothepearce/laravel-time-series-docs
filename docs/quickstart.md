@@ -25,7 +25,7 @@ Next, we create a `Projection`, an Eloquent model with hidden capabilities we wi
 In this example, we will project the `User` model but feel free to use any model you prefer.
 
 ```shell
-php artisan quasar:projection UserProjection
+php artisan make:projection UserProjection
 ```
 
 ## Make your model projectable
