@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import IdeSvg from '../../static/img/ide.svg';
+import PlaySvg from '../../static/img/play.svg'
+import GithubSvg from '../../static/img/github.svg'
 
 function HomepageHeader() {
   return (
@@ -17,9 +19,17 @@ function HomepageHeader() {
             <p className="hero__subtitle">Laravel Quasar lets you build data projections on top of Eloquent models</p>
             <div className={clsx('hero__buttons', styles.buttons)}>
               <Link
-                className="button button--secondary button--lg"
+                className="button button--secondary hero__button-quickstart button--lg"
                 to="/quickstart">
                 Quickstart
+                <PlaySvg className="hero__button-quickstart-svg"></PlaySvg>
+              </Link>
+
+              <Link
+                className="button button--secondary hero__button-github button--lg"
+                to="https://github.com/timothepearce/laravel-quasar">
+                Github
+                <GithubSvg className="hero__button-github-svg"></GithubSvg>
               </Link>
             </div>
           </div>
@@ -31,7 +41,7 @@ function HomepageHeader() {
                 <span className="hero__code-green">php</span> artisan make:projection ComprehensionRate
               </code>
             </pre>
-            <IdeSvg></IdeSvg>
+            <IdeSvg className="hero__ide-svg"></IdeSvg>
           </div>
         </div>
       </div>

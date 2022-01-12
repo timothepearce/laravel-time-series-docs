@@ -9,7 +9,7 @@ const config = {
   title: 'Laravel Quasar',
   tagline: 'Build Eloquent projections with ease',
   url: 'https://timothepearce.github.io/',
-  baseUrl: '/',
+  baseUrl: '/laravel-quasar-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -48,7 +48,7 @@ const config = {
         title: `Laravel Quasar`,
         logo: {
           alt: 'Laravel Quasar logo',
-          src: 'img/logo.svg',
+          src: '/img/logo.svg',
         },
         items: [
           {
