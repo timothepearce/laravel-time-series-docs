@@ -7,9 +7,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Laravel Quasar',
-  tagline: 'Build Eloquent projections with ease.',
+  tagline: 'Build Eloquent projections with ease',
   url: 'https://timothepearce.github.io/',
-  baseUrl: '/laravel-quasar-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -41,7 +41,7 @@ const config = {
     ({
       metadata: [{
         name: 'Laravel Quasar',
-        content: 'projections, statistics, plot, chart, time-series, aggregates, Laravel'
+        content: 'projections, statistics, plot, chart, time series, aggregates, Laravel'
       }],
 
       navbar: {
@@ -68,6 +68,12 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://twitter.com/timothepearce',
+            position: 'right',
+            className: 'header-twitter-link',
+            'aria-label': 'Twitter',
+          },
+          {
             href: 'https://github.com/timothepearce/laravel-quasar',
             position: 'right',
             className: 'header-github-link',
@@ -78,43 +84,9 @@ const config = {
       },
 
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Getting Started',
-                to: '/getting-started/what-is-quasar',
-              },
-              {
-                label: 'Quickstart',
-                to: '/quickstart',
-              },
-              {
-                label: 'Quickstart',
-                to: '/quickstart',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/timothepearce',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/timothepearce/laravel-quasar',
-              },
-            ],
-          },
+
         ],
         copyright: `Designed and built by <a href="https://timpearce.me" target="__blank">Timothé Pearce</a>.`,
       },

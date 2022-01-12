@@ -1,5 +1,4 @@
 ---
-slug: /
 pagination_next: getting-started/installation
 ---
 
@@ -27,7 +26,7 @@ Instead of reinventing the wheel every time you create or query data projections
 
 ## When should I use it?
 
-✅ When you need an easy and fast API to build complex data like statistics, rates, aggregates or even time-series based on your Eloquent models.
+✅ When you need an easy and fast API to build complex data like statistics, rates, aggregates or even time series based on your Eloquent models.
 
 ## When should I not use it?
 
@@ -35,7 +34,7 @@ Instead of reinventing the wheel every time you create or query data projections
 
 ## What are the alternatives to Quasar?
 
-💎 One of the alternatives to this package is [Laravel Event Sourcing](https://github.com/spatie/laravel-event-sourcing) built by [Spatie](https://spatie.be), but keep in mind that it provides a low-level API to implement projections without time-series, you'll have to build them by yourself.
+💎 One of the alternatives to this package is [Laravel Event Sourcing](https://github.com/spatie/laravel-event-sourcing) built by [Spatie](https://spatie.be), but keep in mind that it provides a low-level API to implement projections without time series, you'll have to build them by yourself.
 
 📊 On the other hand if you are only looking for a tool to convert your data into a chart, then I advise you to look at the [Charts](https://github.com/Chartisan/Charts) package.
 
