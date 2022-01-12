@@ -13,7 +13,7 @@ This tutorial will let you discover what Laravel Quasar can do for you in less t
 We start by executing the following commands at **the root directory** of your Laravel app:
 
 ```
-composer require timothepearce/quasar
+composer require timothepearce/laravel-quasar
 
 php artisan migrate
 ```

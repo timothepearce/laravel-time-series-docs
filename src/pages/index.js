@@ -37,7 +37,7 @@ function HomepageHeader() {
           <div className="col col--5 col--offset-2 hero__ide">
             <pre className="hero__code">
               <code>
-                <span className="hero__code-green">composer</span> require timothepearce/quasar<br />
+                <span className="hero__code-green">composer</span> require timothepearce/laravel-quasar<br />
                 <span className="hero__code-green">php</span> artisan make:projection ComprehensionRate
               </code>
             </pre>

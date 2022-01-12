@@ -7,7 +7,7 @@ This section will guide you through the installation process of the library.
 Move to the directory of your Laravel application and run the following command:
 
 ```bash
-composer require timothepearce/quasar
+composer require timothepearce/laravel-quasar
 ```
 
 ## Migrate the tables
