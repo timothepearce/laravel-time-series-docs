@@ -22,14 +22,14 @@ function HomepageHeader() {
                 className="button button--secondary hero__button-quickstart button--lg"
                 to="/quickstart">
                 Quickstart
-                <PlaySvg className="hero__button-quickstart-svg"></PlaySvg>
+                <PlaySvg className="hero__button-quickstart-svg"/>
               </Link>
 
               <Link
                 className="button button--secondary hero__button-github button--lg"
                 to="https://github.com/timothepearce/laravel-quasar">
                 Github
-                <GithubSvg className="hero__button-github-svg"></GithubSvg>
+                <GithubSvg className="hero__button-github-svg"/>
               </Link>
             </div>
           </div>
@@ -41,7 +41,7 @@ function HomepageHeader() {
                 <span className="hero__code-green">php</span> artisan make:projection ComprehensionRate
               </code>
             </pre>
-            <IdeSvg className="hero__ide-svg"></IdeSvg>
+            <IdeSvg className="hero__ide-svg"/>
           </div>
         </div>
       </div>
