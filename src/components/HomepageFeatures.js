@@ -23,7 +23,7 @@ const FeatureList = [
     title: '📊 Statistics the easy way',
     description: (
       <>
-        Quasar provides you with all the tools you need to quickly build your statistics API.
+        Quasar provides you with all the tools you need to build your statistics API quickly.
       </>
     ),
   },

@@ -41,7 +41,7 @@ const config = {
     ({
       metadata: [{
         name: 'Laravel Quasar',
-        content: 'projections, statistics, plot, chart, time-series, aggregates, Laravel'
+        content: 'projections, statistics, plot, chart, time series, aggregates, Laravel'
       }],
 
       navbar: {

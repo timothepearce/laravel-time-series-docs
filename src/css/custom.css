@@ -35,7 +35,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   width: 24px;
   }
 
-.header-github-link:hover {
+.header-twitter-link:before {
+  background-image: url("data:image/svg+xml,%3Csvg id='a3735e00-7f83-4106-ae76-7e999e93477a' data-name='bcee0b9f-5dc8-4b65-a119-da418d9aff24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 19.49'%3E%3Cpath d='M21.55,6.86v.63a13.91,13.91,0,0,1-13.82,14H7.55A13.91,13.91,0,0,1,0,19.29a11.48,11.48,0,0,0,1.17.07,9.92,9.92,0,0,0,6.12-2.11,4.92,4.92,0,0,1-4.6-3.42,4.88,4.88,0,0,0,.93.09,5.07,5.07,0,0,0,1.29-.17A4.94,4.94,0,0,1,1,8.92V8.86a4.91,4.91,0,0,0,2.24.61A4.94,4.94,0,0,1,1.67,2.9,14,14,0,0,0,11.82,8a5.27,5.27,0,0,1-.13-1.12,4.93,4.93,0,0,1,8.52-3.37,10.08,10.08,0,0,0,3.13-1.19,4.93,4.93,0,0,1-2.17,2.72A9.59,9.59,0,0,0,24,4.31,10.07,10.07,0,0,1,21.55,6.86Z' transform='translate(0 -2)'/%3E%3C/svg%3E");
+  content: "";
+  display: flex;
+  height: 19.49px;
+  width: 24px;
+}
+
+.header-github-link:hover, .header-twitter-link:hover {
   opacity: .6;
 }
 
@@ -106,6 +114,10 @@ hr {
   color: white;
   line-height: 2.5rem;
   font-size: 1.05rem;
+}
+
+.hero__code-green {
+  color: #56e854;
 }
 
 .button--secondary {

@@ -16,7 +16,7 @@ To query a projection with a specific name, use your projection class:
 MyProjection::all();
 ```
 
-This query will return an instance of the `ProjectionCollection` collection, which will help you generate a [time-series](/getting-started/query-your-projections#converts-your-projections-to-a-time-series) if needed.
+This query will return an instance of the `ProjectionCollection` collection, which will help you generate a [time series](/getting-started/query-your-projections#converts-your-projections-to-a-time series) if needed.
 
 ### Using the model relationship
 
@@ -102,13 +102,13 @@ It works the same way as the `between` method but returns an instance of the `Pr
 
 The `defaultContent` method from the projection queried will be use a fallback content value for the missing projections.
 
-## Query a time-series
+## Query a time series
 
-Quasar defines a "time-series" as the **final representation of your projections' data**, represented as an array of `segments`.
+Quasar defines a "time series" as the **final representation of your projections' data**, represented as an array of `segments`.
 
 Before going any further, let's look at how a `segment` looks like.
 
-### The Time-series segment
+### The time series segment
 
 A `segment` is a projection instance converted to an array with **all the data you need to easily draw a chart**.
 
@@ -132,9 +132,9 @@ $projection->toSegment();
 
 The `start_date` and `end_date` let you **plot your segment on a time axis**, as well as the `content` array which is the entry point to all data stored by the projection. 
 
-### Get a time-series from the projection model
+### Get a time series from the projection model
 
-To get a time-series from a projection model, use the `toTimeSeries` method:
+To get a time series from a projection model, use the `toTimeSeries` method:
 
 ```php
 MyProjection::period('1 day')
@@ -146,7 +146,7 @@ MyProjection::period('1 day')
 
 This method return a collection of `segments`, ordered by date.
 
-### Convert a collection to a time-series
+### Convert a collection to a time series
 
 :::caution
 
