@@ -2,7 +2,7 @@
 
 ## The Projectable trait
 
-When you want to make your model projectable, you must add it the `Projectable` trait to it:
+When you want to make your model projectable, you must add it the `Projectable` trait:
 
 ```php title="app/Models/MyProjectableModel.php" {6,10}
 <?php
