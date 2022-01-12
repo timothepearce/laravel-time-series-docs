@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import IdeSvg from '../../static/img/ide.svg';
+import PlaySvg from '../../static/img/play.svg'
+import GithubSvg from '../../static/img/github.svg'
 
 function HomepageHeader() {
   return (
@@ -20,6 +22,14 @@ function HomepageHeader() {
                 className="button button--secondary button--lg"
                 to="/quickstart">
                 Quickstart
+                <PlaySvg className="hero__button-quickstart"></PlaySvg>
+              </Link>
+
+              <Link
+                className="button button--secondary button--github button--lg"
+                to="https://github.com/timothepearce/laravel-quasar">
+                Github
+                <GithubSvg className="hero__button-github"></GithubSvg>
               </Link>
             </div>
           </div>

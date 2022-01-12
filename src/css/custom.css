@@ -101,6 +101,14 @@ hr {
   margin-top: 45px;
 }
 
+.hero__button-quickstart, .hero__button-github {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
 .hero__ide {
   position: relative;
 }
@@ -123,7 +131,13 @@ hr {
 .button--secondary {
   background: #48709c;
   color: white !important;
-  padding: .8rem 2.5rem;
+  padding: .8rem 2rem;
+}
+
+.button--github {
+  background: black;
+  color: white;
+  margin-left: 20px;
 }
 
 .button--secondary:hover {
