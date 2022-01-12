@@ -101,7 +101,25 @@ hr {
   margin-top: 45px;
 }
 
-.hero__button-quickstart, .hero__button-github {
+.hero__button-quickstart {
+  background: #48709c;
+}
+
+.hero__button-quickstart:hover {
+  background: #283e56;
+}
+
+.hero__button-github {
+  background: black;
+  color: white;
+  margin-left: 20px;
+}
+
+.hero__button-github:hover {
+  background: #4d4d4d;
+}
+
+.hero__button-quickstart-svg, .hero__button-github-svg {
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -128,22 +146,51 @@ hr {
   color: #56e854;
 }
 
+@media screen and (max-width: 966px) {
+  .hero__title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero__subtitle {
+    margin-top: 30px;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  .hero__buttons {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .hero__button-github {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .hero__ide-svg, .hero__code {
+    display: none;
+  }
+}
+
 .button--secondary {
-  background: #48709c;
-  color: white !important;
   padding: .8rem 2rem;
-}
-
-.button--github {
-  background: black;
-  color: white;
-  margin-left: 20px;
-}
-
-.button--secondary:hover {
-  background: #283e56;
+  color: white !important;
 }
 
 .features {
   padding: 3rem 0 !important;
+}
+
+@media screen and (max-width: 966px) {
+  .features {
+    padding: 1rem 0 !important;
+  }
+
+  .feature--title {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
 }
