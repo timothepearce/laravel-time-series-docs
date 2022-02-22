@@ -33,7 +33,7 @@ A projection with a global period will be unique (regarding the `*` period) and 
 
 ## What happens when you add several periods to a projection?
 
-You can consider that a projection with X periods is actually X separate projections. Separate rows in the `quasar_projectable` table will be created for each period added to a projection.
+You can consider that a projection with X periods is actually X separate projections. Separate rows in the `time_series_projectable` table will be created for each period added to a projection.
 
 For example, if you define a projection with three periods, each time a bound model fires an event, three rows will be updated in the database, one for each period.
 

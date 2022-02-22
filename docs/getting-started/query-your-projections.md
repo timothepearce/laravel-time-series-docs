@@ -1,6 +1,6 @@
 # Query your projections
 
-A projection is an Eloquent model and is **queried the same way**, but keep in mind that the projections are all stored in a single table called `quasar_projections`.
+A projection is an Eloquent model and is **queried the same way**, but keep in mind that the projections are all stored in a single table called `time_series_projections`.
 
 That means **you'll have to use scope methods** to get the correct projections regarding the period or even the key you defined earlier. 
 
