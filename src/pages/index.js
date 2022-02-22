@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className="row">
           <div className="col col--5">
             <h1 className="hero__title">Build your time series with ease</h1>
-            <p className="hero__subtitle">Laravel Time Series lets you build data projections on top of Eloquent models</p>
+            <p className="hero__subtitle">Laravel Time Series lets you aggregate your data on top of Eloquent models and projects them in time</p>
             <div className={clsx('hero__buttons', styles.buttons)}>
               <Link
                 className="button button--secondary hero__button-quickstart button--lg"
