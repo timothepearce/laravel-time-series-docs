@@ -5,10 +5,10 @@
 You can publish the config file by executing:
 
 ```bash
-php artisan vendor:publish --tag="quasar-config"
+php artisan vendor:publish --tag="time-series-config"
 ```
 
-The `quasar.php` file is then accessible in the config folder at the root level.
+The `time-series.php` file is then accessible in the config folder at the root level.
 
 This is the default content of the config file:
 

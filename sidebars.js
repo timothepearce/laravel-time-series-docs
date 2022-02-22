@@ -7,9 +7,9 @@ const sidebars = {
       label: 'Getting Started',
       collapsed: false,
       collapsible: false,
-      link: { type: 'doc', id: 'getting-started/what-is-quasar' },
+      link: { type: 'doc', id: 'getting-started/what-is-time-series' },
       items: [
-        'getting-started/what-is-quasar',
+        'getting-started/what-is-time-series',
         'getting-started/installation',
         'getting-started/configuration',
         'getting-started/make-a-model-projectable',
