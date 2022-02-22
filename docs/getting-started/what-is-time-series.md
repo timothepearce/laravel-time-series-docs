@@ -26,7 +26,7 @@ Instead of reinventing the wheel every time you create or query data projections
 
 ## When should I use it?
 
-✅ When you need an easy and fast API to build complex data like statistics, rates, aggregates or even time series based on your Eloquent models.
+✅ When you need an easy and fast API to build complex data like statistics, rates, aggregates based on your Eloquent models and convert them to a time series.
 
 ## When should I not use it?
 
