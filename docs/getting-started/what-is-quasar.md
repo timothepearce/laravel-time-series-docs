@@ -2,23 +2,23 @@
 pagination_next: getting-started/installation
 ---
 
-# What is Quasar?
+# What is Time Series?
 
 :::info
 
-Laravel Quasar is in pre-release, feel free to star or contribute if you find interest in this project!
+Laravel Time Series is in pre-release, feel free to star or contribute if you find interest in this project!
 
 :::
 
-Laravel Quasar aims to provide a simple and understandable interface for developers to create and maintain **data projections** from **Eloquent models** easily.
+Laravel Time Series aims to provide a simple and understandable interface for developers to create and maintain **data projections** from **Eloquent models** easily.
 
-The name "Quasar" refers to the celestial body of the same name that radiates from the center of galaxies, absorbs an immense amount of matter and distorts the space-time. Well, consider it as a metaphor of what it can do 😄!
+The name "Time Series" refers to the celestial body of the same name that radiates from the center of galaxies, absorbs an immense amount of matter and distorts the space-time. Well, consider it as a metaphor of what it can do 😄!
 
 ## What problem does it solve?
 
-✨ One of the typical use cases solved by Laravel Quasar is the creation and maintenance of statistical data represented as **time series** (aka your statistic dashboard).
+✨ One of the typical use cases solved by Laravel Time Series is the creation and maintenance of statistical data represented as **time series** (aka your statistic dashboard).
 
-Instead of reinventing the wheel every time you create or query data projections, Quasar will provide you with the tools to develop and maintain them and ultimately save you time.
+Instead of reinventing the wheel every time you create or query data projections, Time Series will provide you with the tools to develop and maintain them and ultimately save you time.
 
 ## What are the prerequisites?
 
@@ -30,9 +30,9 @@ Instead of reinventing the wheel every time you create or query data projections
 
 ## When should I not use it?
 
-🚫 Can you solve your problem with a single SQL query? This might not be your case as you won't benefit from the package. The goal of Quasar is to provide help with complex data, allowing you to query it in a quick and easy way.
+🚫 Can you solve your problem with a single SQL query? This might not be your case as you won't benefit from the package. The goal of Time Series is to provide help with complex data, allowing you to query it in a quick and easy way.
 
-## What are the alternatives to Quasar?
+## What are the alternatives to Time Series?
 
 💎 One of the alternatives to this package is [Laravel Event Sourcing](https://github.com/spatie/laravel-event-sourcing) built by [Spatie](https://spatie.be), but keep in mind that it provides a low-level API to implement projections without time series, you'll have to build them by yourself.
 

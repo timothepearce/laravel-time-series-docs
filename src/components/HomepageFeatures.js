@@ -7,7 +7,7 @@ const FeatureList = [
     title: '✨ Based on Laravel',
     description: (
       <>
-        Quasar is built on top of Laravel and the powerful Eloquent ORM.
+        Time Series is built on top of Laravel and the powerful Eloquent ORM.
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList = [
     title: '📊 Statistics the easy way',
     description: (
       <>
-        Quasar provides you with all the tools you need to build your statistics API quickly.
+        Time Series provides you with all the tools you need to build your statistics API quickly.
       </>
     ),
   },

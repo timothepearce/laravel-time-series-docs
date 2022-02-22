@@ -1,4 +1,4 @@
-# Laravel Quasar docs
+# Laravel Time Series docs
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 

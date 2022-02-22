@@ -25,12 +25,12 @@ return [
     'models_namespace' => 'App\\Models',
 
     /*
-     * When enabled, Quasar will process the projections on a queue.
+     * When enabled, Time Series will process the projections on a queue.
      */
     'queue' => false,
 
     /*
-     * The specific queue name used by Quasar.
+     * The specific queue name used by Time Series.
      * Leave empty to use the default queue.
      */
     'queue_name' => '',
@@ -44,7 +44,7 @@ return [
 
 ## Set up your model namespace
 
-By default, Quasar will resolve your model's namespace following the Laravel conventions: `App\Models`.
+By default, Time Series will resolve your model's namespace following the Laravel conventions: `App\Models`.
 
 You can overwrite this behavior by setting the `models_namespace` attributes to something else.
 
@@ -56,13 +56,13 @@ Make sure the queues are set up correctly at the [framework level](https://larav
 
 :::
 
-Quasar can compute your projections in background jobs by setting the `enable_queue` attribute to `true`.
+Time Series can compute your projections in background jobs by setting the `enable_queue` attribute to `true`.
 
-When enabled, each projection will be created/updated in the `TimothePearce\Quasar\Jobs\ComputeProjection` job.
+When enabled, each projection will be created/updated in the `TimothePearce\TimeSeries\Jobs\ComputeProjection` job.
 
 ## Dispatch your jobs to a specific queue
 
-If you enabled the queue, Quasar would use the default one unless you provide something else to the `queue_name` attribute.
+If you enabled the queue, Time Series would use the default one unless you provide something else to the `queue_name` attribute.
 
 ## Set up the first day of the week
 

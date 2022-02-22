@@ -6,14 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Laravel Quasar',
+  title: 'Laravel Time Series',
   tagline: 'Build Eloquent projections with ease',
   url: 'https://timothepearce.github.io/',
-  baseUrl: '/laravel-quasar-docs/',
+  baseUrl: '/laravel-time-series-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'laravel-quasar.github.io',
+  projectName: 'laravel-time-series.github.io',
   organizationName: 'TimothePearce',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
@@ -26,7 +26,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/timothepearce/laravel-quasar-docs/',
+          editUrl: 'https://github.com/timothepearce/laravel-time-series-docs/',
         },
         blog: false,
         theme: {
@@ -40,14 +40,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [{
-        name: 'Laravel Quasar',
+        name: 'Laravel Time Series',
         content: 'projections, statistics, plot, chart, time series, aggregates, Laravel'
       }],
 
       navbar: {
-        title: `Laravel Quasar`,
+        title: `Laravel Time Series`,
         logo: {
-          alt: 'Laravel Quasar logo',
+          alt: 'Laravel Time Series logo',
           src: '/img/logo.svg',
         },
         items: [
@@ -74,7 +74,7 @@ const config = {
             'aria-label': 'Twitter',
           },
           {
-            href: 'https://github.com/timothepearce/laravel-quasar',
+            href: 'https://github.com/timothepearce/laravel-time-series',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',

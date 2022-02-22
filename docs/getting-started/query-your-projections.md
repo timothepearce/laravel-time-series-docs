@@ -35,7 +35,7 @@ Depending on the projection(s) you wish to query, the given parameter can also b
 As an alternative, you can use the `name` scope method of the `Projection` class:
 
 ```php
-use TimothePearce\Quasar\Models\Projection;
+use TimothePearce\TimeSeries\Models\Projection;
 
 Projection::name(MyProjection::class)
     ->get();
@@ -82,13 +82,13 @@ MyProjection::period('1 day')
 
 The `between` method parameters must be instances of the `Illuminate\Support\Carbon` class.
 
-Each date is rounded to the floor by the given period, which means that you **don't have to provide the exact dates**, Quasar will do the maths for you.
+Each date is rounded to the floor by the given period, which means that you **don't have to provide the exact dates**, Time Series will do the maths for you.
 
 Note that this method **does not fill the missing projections** between the given dates, instead it returns a query builder.
 
 ## Get and fill the missing projection between two dates
 
-If you wish to obtain projections between two dates but also fill the missing ones, Quasar provides the `fillBetween` method.
+If you wish to obtain projections between two dates but also fill the missing ones, Time Series provides the `fillBetween` method.
 
 ```php
 MyProjection::period('1 day')
@@ -104,7 +104,7 @@ The `defaultContent` method from the projection queried will be use a fallback c
 
 ## Query a time series
 
-Quasar defines a "time series" as the **final representation of your projections' data**, represented as an array of `segments`.
+Time Series defines a "time series" as the **final representation of your projections' data**, represented as an array of `segments`.
 
 Before going any further, let's look at how a `segment` looks like.
 

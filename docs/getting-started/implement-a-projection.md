@@ -18,8 +18,8 @@ It is defined as follows:
 namespace App\Models\Projections;
 
 use Illuminate\Database\Eloquent\Model;
-use TimothePearce\Quasar\Contracts\ProjectionContract;
-use TimothePearce\Quasar\Models\Projection;
+use TimothePearce\TimeSeries\Contracts\ProjectionContract;
+use TimothePearce\TimeSeries\Models\Projection;
 
 class MyProjection extends Projection implements ProjectionContract
 {
@@ -172,7 +172,7 @@ In case you bound multiple models to your projection you must use the `Illuminat
 
 Sometimes you need to restrict your projection to a unique identifier (e.g: You want a projection scoped **by Team ID**).
 
-In that case, Quasar lets you define a `key` method in your projection:
+In that case, Time Series lets you define a `key` method in your projection:
 
 ```php title="app/Models/Projections/MyProjection.php" {10,11,12,13}
 ...

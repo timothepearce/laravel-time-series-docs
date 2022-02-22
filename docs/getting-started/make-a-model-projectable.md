@@ -10,7 +10,7 @@ When you want to make your model projectable, you must add it the `Projectable` 
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use TimothePearce\Quasar\Projectable;
+use TimothePearce\TimeSeries\Projectable;
 
 class MyProjectableModel extends Model
 {
@@ -20,7 +20,7 @@ class MyProjectableModel extends Model
 
 Under the hood, this trait will listen for the model's lifecycle events in order to bind them to the projections you will define in the next paragraph.
 
-It also defines a `MorphToMany` relation with the generic `TimothePearce\Quasar\Models\Projection` model, which allows you to query your projections following the Eloquent conventions you already know.
+It also defines a `MorphToMany` relation with the generic `TimothePearce\TimeSeries\Models\Projection` model, which allows you to query your projections following the Eloquent conventions you already know.
 
 ## Bind your model to projections
 
@@ -33,7 +33,7 @@ namespace App\Models;
 
 use App\Models\Projections\MyProjection;
 use Illuminate\Database\Eloquent\Model;
-use TimothePearce\Quasar\Projectable;
+use TimothePearce\TimeSeries\Projectable;
 
 class MyProjectableModel extends Model
 {

@@ -1,6 +1,6 @@
 # Available periods
 
-When a projection is created, Quasar assigns it a `start_date` and an `end_date`, the interval between these two values is called a **period**. Therefore, you can consider it as the "life span" of your projection.
+When a projection is created, Time Series assigns it a `start_date` and an `end_date`, the interval between these two values is called a **period**. Therefore, you can consider it as the "life span" of your projection.
 
 A period is usually composed of two parts, a **number** followed by a **type**; the only exception is regarding the [global period](#the-global-period).
 
@@ -8,7 +8,7 @@ Here is a list of valid periods: `*`, `1 day`, `2 hours`, `3 months`, `1 year`, 
 
 ## Types of periods
 
-Laravel Quasar gives you access to these different types of periods:
+Laravel Time Series gives you access to these different types of periods:
 * `*`
 * `minute`
 * `hour`
