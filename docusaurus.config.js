@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  projectName: 'laravel-time-series-doc',
+  projectName: 'laravel-time-series-docs',
   organizationName: 'TimothePearce',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
